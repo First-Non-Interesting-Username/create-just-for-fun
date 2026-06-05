@@ -1,0 +1,29 @@
+hash-format = "sha256"
+
+[[files]]
+file = ".devcontainer/devcontainer-lock.json"
+hash = "bedde338e056cb50acb61dfa6548233a873ebe24fc0537082383021a8812690c"
+
+[[files]]
+file = ".devcontainer/devcontainer.json"
+hash = "bdfd6fa6cd02d65986743a1f5c9376a9659195dfcb865cbb86b7fac9827a8f96"
+
+[[files]]
+file = ".envrc"
+hash = "440225589d4fa2e392e6b0cdabbb056788f6ca46fb69ec79f2ac565ad2acd166"
+
+[[files]]
+file = "LICENSE"
+hash = "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+
+[[files]]
+file = "README.md"
+hash = "02612f60aaef8637644ab41063c125e1847960551ce7d954e21d7133ef8928e9"
+
+[[files]]
+file = "devenv.nix"
+hash = "eee835363ed43b2806861e1dddf360037f6b19f3be83b54e56d5f5f83020717b"
+
+[[files]]
+file = "renovate.json"
+hash = "173e3c711319403f415acba170bdbde545d67ee5c87b5dfa637d1ff8d4a4bd68"
