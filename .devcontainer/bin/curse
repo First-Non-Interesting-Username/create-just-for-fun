@@ -1,0 +1,2 @@
+#!/bin/sh
+packwiz curseforge add "$@"

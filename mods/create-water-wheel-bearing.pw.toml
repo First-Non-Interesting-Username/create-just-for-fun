@@ -1,0 +1,13 @@
+name = "Create: Water Wheel Bearing"
+filename = "waterwheelbearing-2.0.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/t3NoiI5a/versions/Qr4DY1BH/waterwheelbearing-2.0.5.jar"
+hash-format = "sha512"
+hash = "48d4587e89eac5b3b63ea79f6c72bf05a67188506c3090e79eaada27b1896fed9ecd5ea698d8aa5e5aff8e4bc247c5cc41cf46a70f676fe9fd25c73c4e85be7e"
+
+[update]
+[update.modrinth]
+mod-id = "t3NoiI5a"
+version = "Qr4DY1BH"

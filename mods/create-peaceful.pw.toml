@@ -1,0 +1,13 @@
+name = "Create: Peaceful"
+filename = "create_peaceful-2.0.3-neoforge-1.21.1.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/9mmhz018/versions/K6Vdgfsa/create_peaceful-2.0.3-neoforge-1.21.1.jar"
+hash-format = "sha512"
+hash = "505bd0acafd18341ccb8af8c6489d17ff290a82e0199d3a77d00074b1e8b89dc8b40d2ca7bca450469b3ad02eca7bc18e7c9f7b3545568aae871d6270aa2295b"
+
+[update]
+[update.modrinth]
+mod-id = "9mmhz018"
+version = "K6Vdgfsa"

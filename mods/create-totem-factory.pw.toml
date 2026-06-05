@@ -1,0 +1,13 @@
+name = "Create: Totem Factory"
+filename = "TotemFactory-1.1.1+mc1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ae2lDuIP/versions/jyvlokKK/TotemFactory-1.1.1%2Bmc1.21.1-NeoForge.jar"
+hash-format = "sha512"
+hash = "6f7967d8fe96cbf34f7b7016c141d74d1b0566d1b4844430c23f62bd58f84258e727e3c1bd1531bd2b42532ae27f6a48d549c3166b160b36e1c7732751e9f70e"
+
+[update]
+[update.modrinth]
+mod-id = "ae2lDuIP"
+version = "jyvlokKK"
