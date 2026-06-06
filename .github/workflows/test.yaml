@@ -1,1 +1,123 @@
 name: Test Modpack
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  JAVA_VERSION: 21
+  PACK_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/pack.toml
+
+jobs:
+  test:
+    name: Test ${{ matrix.side == 'client' && 'Client' || 'Server' }} (NeoForge 1.21.1)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        side: [client, server]
+
+    steps:
+      - name: Checkout modpack
+        uses: actions/checkout@v6
+
+      - name: Install Java ${{ env.JAVA_VERSION }}
+        uses: actions/setup-java@v5
+        with:
+          java-version: ${{ env.JAVA_VERSION }}
+          distribution: temurin
+
+      - name: Install NeoForge native dependencies
+        if: matrix.side == 'client'
+        run: sudo apt-get install -y libxtst6 libxi6
+
+      - name: Create game directory
+        run: mkdir -p ${{ matrix.side }}/mods
+
+      - name: Download packwiz-installer-bootstrap
+        run: |
+          curl -fsSL -o ${{ matrix.side }}/packwiz-installer-bootstrap.jar \
+            https://github.com/packwiz/packwiz-installer-bootstrap/releases/latest/download/packwiz-installer-bootstrap.jar
+
+      - name: Install mods with packwiz-installer
+        working-directory: ${{ matrix.side }}
+        run: |
+          java -jar packwiz-installer-bootstrap.jar \
+            -g -s ${{ matrix.side }} \
+            "${{ env.PACK_URL }}"
+
+      - name: Configure HeadlessMC (client)
+        if: matrix.side == 'client'
+        run: |
+          mkdir -p HeadlessMC
+          cat > HeadlessMC/config.properties << 'EOF'
+          hmc.gamedir=${{ github.workspace }}/client
+          hmc.assets.dummy=true
+          EOF
+
+      - name: Write server test script
+        if: matrix.side == 'server'
+        run: |
+          cat > server-test.json << 'EOF'
+          {
+            "name": "NeoForge Server Boot Test",
+            "steps": [
+              {
+                "type": "ENDS_WITH",
+                "message": "For help, type \"help\"",
+                "timeout": 300
+              },
+              {
+                "type": "SEND",
+                "message": "stop",
+                "timeout": 120
+              }
+            ]
+          }
+          EOF
+
+      - name: Configure HeadlessMC (server)
+        if: matrix.side == 'server'
+        run: |
+          mkdir -p HeadlessMC
+          cat > HeadlessMC/config.properties << 'EOF'
+          hmc.gamedir=${{ github.workspace }}/server
+          EOF
+
+      - name: Run client (NeoForge 1.21.1)
+        if: matrix.side == 'client'
+        uses: headlesshq/mc-runtime-test@4.1.0
+        with:
+          mc: 1.21.1
+          modloader: neoforge
+          regex: .*neoforge.*
+          mc-runtime-test: neoforge
+          java: ${{ env.JAVA_VERSION }}
+          dummy-assets: true
+          xvfb: true
+          cache-mc: github
+
+      - name: Run server (NeoForge 1.21.1)
+        if: matrix.side == 'server'
+        uses: headlesshq/mc-server-test@1.1.1
+        with:
+          mc: 1.21.1
+          modloader: neoforge
+          java: ${{ env.JAVA_VERSION }}
+          test-file: ./server-test.json
+          cache-mc: github
+
+  checks:
+    name: Checks
+    if: always()
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify all jobs passed
+        run: |
+          if [ "${{ needs.test.result }}" != "success" ]; then
+            echo "::error::Test matrix failed"
+            exit 1
+          fi
