@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v
+      - uses: actions/checkout@v6
 
       - name: Update mods
         uses: hudsonm62/packwiz-action@v1

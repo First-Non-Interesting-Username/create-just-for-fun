@@ -17,7 +17,7 @@ jobs:
      - name: Update mods
        uses: hudsonm62/packwiz-action@v1
        with:
-        args: update --all
+        args: update --all -y
     
      - name: Setup taplo
        uses: uncenter/setup-taplo@v2
@@ -27,7 +27,12 @@ jobs:
      - name: Run taplo fmt
        run: taplo fmt
 
-     # - name: Test modpack
+     - name: Run test workflow
+       run: |
+          gh workflow run test.yaml --ref ${{ github.ref }}
+          sleep 5
+          run_id=$(gh run list --workflow=test.yaml --limit=1 --json databaseId -q '.[0].databaseId')
+          gh run watch "$run_id" --exit-status
 
      - name: Create Pull Request
        uses: peter-evans/create-pull-request@v8

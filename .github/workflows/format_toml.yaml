@@ -10,7 +10,7 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v
+      - uses: actions/checkout@v6
 
       - uses: uncenter/setup-taplo@v2
         with:
