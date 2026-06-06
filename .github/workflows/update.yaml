@@ -1,1 +1,40 @@
 name: Update mods
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 17 * * 4'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+     - uses: actions/checkout@v6
+
+     - name: Update mods
+       uses: hudsonm62/packwiz-action@v1
+       with:
+        args: update --all
+    
+     - name: Setup taplo
+       uses: uncenter/setup-taplo@v2
+       with:
+        version: "0.10.0"
+
+     - name: Run taplo fmt
+       run: taplo fmt
+
+     - name: Test modpack
+
+     - name: Create Pull Request
+       uses: peter-evans/create-pull-request@v6
+       with:
+         token: ${{ secrets.GITHUB_TOKEN }}
+         commit-message: "chore(deps): update mods"
+         title: "chore(deps): update mods"
+         body: "This PR contains updated mods via `packwiz update --all`"
+         branch: "chore(deps)/update-mods"
+         base: "main"

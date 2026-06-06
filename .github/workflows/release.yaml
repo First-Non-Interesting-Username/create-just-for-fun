@@ -1,0 +1,30 @@
+name: Create github release
+
+on:
+  schedule:
+    - cron: '45 17 * * 5'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v
+
+      - name: Update mods
+        uses: hudsonm62/packwiz-action@v1
+        with:
+          args: modrinth export
+
+      - name: Get release name
+        id: release_name
+        run: echo "value=$(date +'%Y.%V')" >> $GITHUB_OUTPUT
+      
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.release_name.outputs.value }}
+          name: ${{ steps.release_name.outputs.value }}
+          generate_release_notes: true
+          files: "*.mrpack"
