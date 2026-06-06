@@ -54,7 +54,7 @@ hash = "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
 
 [[files]]
 file = "README.md"
-hash = "a9678d5dc4a94a457c35fae884db18df02f9792e8f9ccfe5717722b1ab28e5f5"
+hash = "ca2356bc64ae732c82ad1e4f83d40180a82d75a3a3314608d56a850c98023b13"
 
 [[files]]
 file = "devenv.nix"
