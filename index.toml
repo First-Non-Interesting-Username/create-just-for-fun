@@ -663,7 +663,7 @@ metafile = true
 
 [[files]]
 file = "mods/jade-sable-compat.pw.toml"
-hash = "de4a88126c0c9ab4304ff4b6a9cf708d2587d0f572d035b51b3384e784dc6b2e"
+hash = "dc60a6e206bfd63faa85e420d94deab4efb8948b52960d01ba929f12f4ceb94f"
 metafile = true
 
 [[files]]
@@ -858,7 +858,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-backpacks.pw.toml"
-hash = "e9ca3f83a9ab1bf8e2b1bd00ee727aeffa5c0ec74f63a058048e73550e16c44f"
+hash = "a64b9c62bf1c9be34699aa17082c33f4f93595caf72f12e4e448c4aebea3e212"
 metafile = true
 
 [[files]]
@@ -883,7 +883,7 @@ metafile = true
 
 [[files]]
 file = "mods/ssrd.pw.toml"
-hash = "ffaa11cd58e879d8309976f670f82d156ef5286cef6daad2e76b0fc3902fb4e0"
+hash = "8da1be0f235401e8a90a7459665d79b59fdce440a085a7ac796dda43c8ee10a0"
 metafile = true
 
 [[files]]
@@ -908,7 +908,7 @@ metafile = true
 
 [[files]]
 file = "mods/vista_tv.pw.toml"
-hash = "c493f2722c4a9c08029f43140babc8f37bacfda57932ce5b29b29e388710fe82"
+hash = "5367de6572975a1ceaada2d2468624ada048810923fc51e10cc641a8a50da069"
 metafile = true
 
 [[files]]
