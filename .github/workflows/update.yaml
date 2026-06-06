@@ -34,6 +34,13 @@ jobs:
           run_id=$(gh run list --workflow=test.yaml --limit=1 --json databaseId -q '.[0].databaseId')
           gh run watch "$run_id" --exit-status
 
+     - name: Bump pack version
+       run: |
+          NEW_VERSION=$(date -u +"%Y.%V")
+          sed -i "s/^version = \".*\"/version = \"$NEW_VERSION\"/" pack.toml
+          echo "NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
+
+
      - name: Create Pull Request
        uses: peter-evans/create-pull-request@v8
        with:
