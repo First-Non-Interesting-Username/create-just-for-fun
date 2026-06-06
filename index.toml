@@ -1,16 +1,28 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".devcontainer/bin/curse"
+hash = "0cbeb1881e0e8b387a23ca9752f21d50f1a59fe16408457458108b5817e22055"
+
+[[files]]
+file = ".devcontainer/bin/mod"
+hash = "641bdc1524ec816cfa9cf4b4f97cf444f856b9169dc3e02e8fbb3e8a1743a56e"
+
+[[files]]
 file = ".devcontainer/devcontainer-lock.json"
 hash = "bedde338e056cb50acb61dfa6548233a873ebe24fc0537082383021a8812690c"
 
 [[files]]
 file = ".devcontainer/devcontainer.json"
-hash = "bdfd6fa6cd02d65986743a1f5c9376a9659195dfcb865cbb86b7fac9827a8f96"
+hash = "372f4de0d76aa6ef5473e731021ca2f61db4821c378edb2efadb60f1b1018b43"
 
 [[files]]
 file = ".envrc"
 hash = "440225589d4fa2e392e6b0cdabbb056788f6ca46fb69ec79f2ac565ad2acd166"
+
+[[files]]
+file = ".github/dependabot.yaml"
+hash = "87cf83ee803b670102a9b70dbc746043f4505a4f810ff8f566aeeb3a7a06c578"
 
 [[files]]
 file = "LICENSE"
@@ -22,7 +34,7 @@ hash = "02612f60aaef8637644ab41063c125e1847960551ce7d954e21d7133ef8928e9"
 
 [[files]]
 file = "devenv.nix"
-hash = "eee835363ed43b2806861e1dddf360037f6b19f3be83b54e56d5f5f83020717b"
+hash = "a5bd6b98504773dba563b05154e9015ccf9f136db5c96405eb1d1bec93305b8f"
 
 [[files]]
 file = "mods/advanced-loot-info.pw.toml"
@@ -190,6 +202,11 @@ hash = "db7aed530208f0aedf516a6b616b9034941059354e93f75e5e8e1d57381f3312"
 metafile = true
 
 [[files]]
+file = "mods/create-aero-cables.pw.toml"
+hash = "532fd10b16dc6962f4f9e7f102fbae6628207d42680ff5149ccccf3a8180f4dc"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics-(sable)-mass-view.pw.toml"
 hash = "1e49251a57f6363ec88f7e04df5b001b658c9435f5bf5b2ed3b3bbb4693bb3ab"
 metafile = true
@@ -301,7 +318,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-dragons-plus.pw.toml"
-hash = "e8a9cad190dea956be9e31c8b27ba325972fdf77823e58e03c9e2d7044be206a"
+hash = "8537630bc53bd3ffaa1539e0ea0c4c1569609e0a1430166c2178b532ba507226"
 metafile = true
 
 [[files]]
@@ -316,7 +333,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-enchantment-industry.pw.toml"
-hash = "2da501ad838751519916dc38b548c81bcf778517712e5302a3d0bbfdf8656220"
+hash = "166d312672116bc62648572337c66018be6e794eb12e25fb2b508f686fdd58e5"
 metafile = true
 
 [[files]]
@@ -512,11 +529,6 @@ metafile = true
 [[files]]
 file = "mods/cull-leaves.pw.toml"
 hash = "a9b9623c952949837c1c6827b94b5969241c44825483a901cad12fcda12d40e9"
-metafile = true
-
-[[files]]
-file = "mods/cupboard.pw.toml"
-hash = "a079bf8579ded1a9eeba488f91bdf632a41ac2c35a0cccd8c3aa3cc9ddb7250d"
 metafile = true
 
 [[files]]
@@ -851,7 +863,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "8f12c3ef1a95ed4b0eae62b25ccb2aece1ac083dabca2ce1a92ddf0d8125626e"
+hash = "a31a07b5755fc9d05785ed841d8276c05c1c504ff052ee5d898af5f706dc394b"
 metafile = true
 
 [[files]]
@@ -861,7 +873,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "1e0a3022cf327a4ecbcf9469cb0b6a895503ce77303d7c1d8f4595f97d094227"
+hash = "b75e19ba95ad946b923ff7b33d4618726684fd51d8f698df7598d08fe614874e"
 metafile = true
 
 [[files]]

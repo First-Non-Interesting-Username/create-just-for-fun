@@ -1,0 +1,30 @@
+name: Format .toml files
+
+on: 
+    workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v
+
+      - uses: uncenter/setup-taplo@v2
+        with:
+          version: "0.10.0"
+
+      - name: Check formatting
+        run: taplo fmt
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "style: toml formatting"
+          title: "style: toml formatting"
+          body: "This PR contains code formatted by taplo"
+          branch: "style/toml-formatting"
+          base: "main"

@@ -1,0 +1,9 @@
+[[rule]]
+name = "pack"
+include = ["pack.toml"]
+schema = { path = "https://raw.githubusercontent.com/packwiz/packwiz-spec/v1/schemas/pack.json" }
+
+[[rule]]
+name = "mods"
+include = ["**/*.pw.toml"]
+schema = { path = "https://raw.githubusercontent.com/packwiz/packwiz-spec/v1/schemas/mod.json" }
