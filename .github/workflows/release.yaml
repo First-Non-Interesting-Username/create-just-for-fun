@@ -22,7 +22,7 @@ jobs:
         run: echo "value=$(date +'%Y.%V')" >> $GITHUB_OUTPUT
       
       - name: Create Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.release_name.outputs.value }}
           name: ${{ steps.release_name.outputs.value }}
