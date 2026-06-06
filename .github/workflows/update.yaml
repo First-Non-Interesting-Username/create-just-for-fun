@@ -27,7 +27,7 @@ jobs:
      - name: Run taplo fmt
        run: taplo fmt
 
-     - name: Test modpack
+     # - name: Test modpack
 
      - name: Create Pull Request
        uses: peter-evans/create-pull-request@v8
