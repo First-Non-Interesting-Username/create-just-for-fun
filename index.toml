@@ -54,7 +54,7 @@ hash = "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
 
 [[files]]
 file = "README.md"
-hash = "ca2356bc64ae732c82ad1e4f83d40180a82d75a3a3314608d56a850c98023b13"
+hash = "e6aa7aad90204bb46ccaee55d5090181082fe0935373e26709c18fd1997b8ba9"
 
 [[files]]
 file = "devenv.nix"
@@ -78,11 +78,6 @@ metafile = true
 [[files]]
 file = "mods/ai-improvements.pw.toml"
 hash = "3d8f918c52e27d4c640f78c67c0a51a2ddbe4e3703c149e8ed9461f43bd5fedd"
-metafile = true
-
-[[files]]
-file = "mods/alltheleaks.pw.toml"
-hash = "7e03652d2003566873ab5103454f7c537471d6c2fea1c2f614507b33ef4434f7"
 metafile = true
 
 [[files]]
@@ -182,7 +177,7 @@ metafile = true
 
 [[files]]
 file = "mods/collective.pw.toml"
-hash = "34cb9102708e368a116c6b11e98728e0c4b471a6afdf7ce9602f93cb75174509"
+hash = "540572ddb1d9c1de4d0c8c6b3cfbe9f8ceaddbf465523db39b007e547cf3ae01"
 metafile = true
 
 [[files]]
@@ -193,11 +188,6 @@ metafile = true
 [[files]]
 file = "mods/compass-to-map-xaeros.pw.toml"
 hash = "19b993b25c27eb6d1a78215683112f46a798448b02ebed3b14c583e2c2d91880"
-metafile = true
-
-[[files]]
-file = "mods/configured.pw.toml"
-hash = "af4dc4828902eae1784568632a749fe9a442943f1570ac0ba3ea75e79934be41"
 metafile = true
 
 [[files]]
@@ -292,7 +282,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
-hash = "a76b3b07c25a8ea8c2797328d0d531f64dfbce5a662f343f833bd9857285286f"
+hash = "f7b20a7e5ae4678c0e74e7e6945f48c402636f8887d65b0cdab0357dd5c08856"
 metafile = true
 
 [[files]]
@@ -342,7 +332,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-dragons-plus.pw.toml"
-hash = "8537630bc53bd3ffaa1539e0ea0c4c1569609e0a1430166c2178b532ba507226"
+hash = "616a0a7fc051382574b73276c74e60ae7c40d9cf1bbb9113375da164278ae94f"
 metafile = true
 
 [[files]]
@@ -626,21 +616,6 @@ hash = "f3935636357eb78086ff6ba4e8ed68ea0d63411dadbaaf97f25727cfbc6399e3"
 metafile = true
 
 [[files]]
-file = "mods/fastfurnace.pw.toml"
-hash = "4f7c443c70a28284bfb40e613c835167c9c71f2db257714275041f16e280b6d9"
-metafile = true
-
-[[files]]
-file = "mods/fastsuite.pw.toml"
-hash = "83e60a73e109258def123fbcab5cf606857f36feca621a4c40c9d7c10b285bca"
-metafile = true
-
-[[files]]
-file = "mods/fastworkbench.pw.toml"
-hash = "0d13e70b59a7f4623237f6b03e22368235d123030f36f18312fd20a8f7d2e459"
-metafile = true
-
-[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
@@ -657,7 +632,7 @@ metafile = true
 
 [[files]]
 file = "mods/hypertube.pw.toml"
-hash = "9aed20c67bf8890e5c67607d79270c71af98a8722f29118594bb768e9578b7c0"
+hash = "83552a504c2a4febadbc9873a18327a884f2bb1568d6aa786551776afe393e88"
 metafile = true
 
 [[files]]
@@ -806,11 +781,6 @@ hash = "413494b5ba534461e22545173a8cc6e98b04962a0ee9514498b830b99d4acabe"
 metafile = true
 
 [[files]]
-file = "mods/placebo.pw.toml"
-hash = "201e0be56d2d9430843688b4a04dea207732b6d60f8001fb9e6396d48aea287f"
-metafile = true
-
-[[files]]
 file = "mods/platform.pw.toml"
 hash = "00887452f4c902a5f98fc42875d522e59948b60c20d887855a183c0f7235c641"
 metafile = true
@@ -871,11 +841,6 @@ hash = "b131faa1c8ca8217f5d52612d4b41f8f8f019488f6b1e3bfee065ca82c21bdfb"
 metafile = true
 
 [[files]]
-file = "mods/smooth-chunk-save.pw.toml"
-hash = "ff6934dbf3203c63dbdab3b2b3a89e82c047ad22db63d8511d737a489aac743c"
-metafile = true
-
-[[files]]
 file = "mods/sodium-extra.pw.toml"
 hash = "1aad262000bea80b345a973a19a626bfbcb65b2ba78843843649e740168d04fd"
 metafile = true
@@ -908,11 +873,6 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
 hash = "b75e19ba95ad946b923ff7b33d4618726684fd51d8f698df7598d08fe614874e"
-metafile = true
-
-[[files]]
-file = "mods/sound-physics-remastered.pw.toml"
-hash = "b9d4d42709629f2d52cb9d33bedf298bbea635b53f69946f9ec2735c47dfbd83"
 metafile = true
 
 [[files]]
