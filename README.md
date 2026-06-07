@@ -8,7 +8,7 @@ For reports, please [create an issue](https://github.com/First-Non-Interesting-U
 ## Developement setup
 
 Use of [devenv](https://github.com/cachix/devenv) is highly reccomended.
-You can also use [devcontainers](https://containers.dev/), but note that it doesn't offer feature parity with devenv.
+You can also use the [devcontainer](https://containers.dev/), but note that it doesn't offer feature parity with devenv.
 
 This is a packwiz based modpack, here are some useful commands:
 ```bash
@@ -28,9 +28,15 @@ This is a personal modpile, but with good enough argumentation I can accept modi
 
 ## Issues
 
-Feel free to create issues for whatever reason. Remember that I don't accept performance complaints from people with specs below required.
+Feel free to submit a report for any reason—whether it's a bug, a suggestion, or just because you want to chat about the project. 
+Remember that I don't accept performance complaints from people with specs below `Required`.
 
-I reserve the right to not fix issues that I cannot reproduce on my setup (Linux, Prism Laucher, `Required` hardware)
+I reserve the right not to address issues that I am unable to reproduce on my own setup (Linux, Prism Laucher, `Required` hardware).
+
+## Roadmap
+
+- Include custom recipes
+- Remove all curseforge mods, so all mods are from modrinth
 
 ## Star History
 
