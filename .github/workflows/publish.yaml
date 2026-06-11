@@ -1,6 +1,0 @@
-# This will be created when the modpack is available on modrinth
-name: Publish to Modrinth
-
-on:
-  #schedule:
-  #  - cron: '45 17 * * 6'

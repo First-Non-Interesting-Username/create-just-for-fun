@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - name: Update mods
+      - name: Export to .mrpack
         uses: hudsonm62/packwiz-action@v1
         with:
           args: modrinth export
@@ -27,4 +27,17 @@ jobs:
           tag_name: ${{ steps.release_name.outputs.value }}
           name: ${{ steps.release_name.outputs.value }}
           generate_release_notes: true
-          files: "*.mrpack"
+          files: "*./*.mrpack"
+
+      - name: Publish Modpack to Modrinth
+        uses: modrinth/modrinth-publish@v2
+        with:
+          token: ${{ secrets.MODRINTH_TOKEN }}
+          project-id: 'Oz2C6Bff' 
+          version: ${{ steps.release_name.outputs.value }}
+          file: ./*.mrpack
+          changelog: ${{ steps.create_release.outputs.body }}
+          version-type: 'release'
+          loaders: 'modrinth'
+          game-versions: |
+            1.21.1
