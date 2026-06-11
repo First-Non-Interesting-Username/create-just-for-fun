@@ -1,0 +1,13 @@
+name = "FPS Overlay"
+filename = "fps_overlay-4.2.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/j0IQ4hjv/versions/Mv31uBxu/fps_overlay-4.2.jar"
+hash-format = "sha512"
+hash = "5694ae940728d27a5661f446c46f72fae1a5414a896a79c9b7608851f4170613769e09ca787128bed406db94309dc26a84af4ff2c9ff7238fc886ef4f6dd9b28"
+
+[update]
+[update.modrinth]
+mod-id = "j0IQ4hjv"
+version = "Mv31uBxu"

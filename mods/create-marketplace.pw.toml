@@ -1,13 +1,13 @@
 name = "Create: Marketplace"
-filename = "create_marketplace-0.2.2.jar"
+filename = "create_marketplace-0.2.5.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/O7RTXyyq/versions/ttaB8j1q/create_marketplace-0.2.2.jar"
+url = "https://cdn.modrinth.com/data/O7RTXyyq/versions/TMHWPeYL/create_marketplace-0.2.5.jar"
 hash-format = "sha512"
-hash = "704c63317bd278b4cee2f76fb4e6f116e428fcc48cc0a47bac6ee6647ef6115806e6834faf39faf30c761746bdbb7e61d436ffdc5a3047161fe098d25efce1f3"
+hash = "38dea9efaf4c1b00e48fd67e0e952483b5b0c2435b5ddb2970ec9fda82c3d8277546f4b69b1ce69596201a7e4a33112a07cfd22fb623a84db0c1056e4073fd13"
 
 [update]
 [update.modrinth]
 mod-id = "O7RTXyyq"
-version = "ttaB8j1q"
+version = "TMHWPeYL"
