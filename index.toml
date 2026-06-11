@@ -21,10 +21,6 @@ file = ".envrc"
 hash = "440225589d4fa2e392e6b0cdabbb056788f6ca46fb69ec79f2ac565ad2acd166"
 
 [[files]]
-file = ".github/dependabot.yaml"
-hash = "87cf83ee803b670102a9b70dbc746043f4505a4f810ff8f566aeeb3a7a06c578"
-
-[[files]]
 file = ".github/workflows/check_toml.yaml"
 hash = "f13b357711714085e1bff1e0c3cecb2d5df2a9de6e985056341c7cd3e97bd975"
 
@@ -34,7 +30,7 @@ hash = "20f9a36903f404ae63bda9737dd2bd2d3de8c89db914378edff1f5f13d32ae6e"
 
 [[files]]
 file = ".github/workflows/release.yaml"
-hash = "697608ec2dc8afbaa34b82acca49defd9ed156658d8eedc0373308b69bd42408"
+hash = "bbe1bc68fef0f808d382a6b5ac1ada247eb8d6393033555610e49d03a4c18b64"
 
 [[files]]
 file = ".github/workflows/test.yaml"
@@ -50,7 +46,7 @@ hash = "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
 
 [[files]]
 file = "README.md"
-hash = "e6aa7aad90204bb46ccaee55d5090181082fe0935373e26709c18fd1997b8ba9"
+hash = "1a431e27c7115db7f44248a422a89c23a251a5b75199228694209acb116aa313"
 
 [[files]]
 file = "artworks/baner.jpg"
@@ -956,7 +952,7 @@ metafile = true
 
 [[files]]
 file = "renovate.json"
-hash = "173e3c711319403f415acba170bdbde545d67ee5c87b5dfa637d1ff8d4a4bd68"
+hash = "ceff4d4116907e482a6d03d8d7d5e9ff78557601cc56a07dd58b986a85c8bfa9"
 
 [[files]]
 file = "resourcepacks/default-dark-mode.pw.toml"

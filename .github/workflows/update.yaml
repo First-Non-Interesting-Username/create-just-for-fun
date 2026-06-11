@@ -18,6 +18,11 @@ jobs:
        uses: hudsonm62/packwiz-action@538bcd35d3a4810f35ef6f51b0b65be8191b28bf # v1
        with:
         args: update --all -y
+
+     - name: Refresh packwiz
+       uses: hudsonm62/packwiz-action@538bcd35d3a4810f35ef6f51b0b65be8191b28bf # v1
+       with:
+        args: refresh
     
      - name: Setup taplo
        uses: uncenter/setup-taplo@b18c8c8302695fe63d6853bc004006215ac52b91 # v2
