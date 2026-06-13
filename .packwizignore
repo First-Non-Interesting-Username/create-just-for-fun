@@ -1,0 +1,7 @@
+.devcontainer/
+.github/
+*.md
+LICENSE
+renovate.json
+taplo.toml
+artworks/

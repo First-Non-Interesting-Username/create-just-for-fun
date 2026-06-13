@@ -1,60 +1,8 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".devcontainer/bin/curse"
-hash = "0cbeb1881e0e8b387a23ca9752f21d50f1a59fe16408457458108b5817e22055"
-
-[[files]]
-file = ".devcontainer/bin/mod"
-hash = "641bdc1524ec816cfa9cf4b4f97cf444f856b9169dc3e02e8fbb3e8a1743a56e"
-
-[[files]]
-file = ".devcontainer/devcontainer-lock.json"
-hash = "bedde338e056cb50acb61dfa6548233a873ebe24fc0537082383021a8812690c"
-
-[[files]]
-file = ".devcontainer/devcontainer.json"
-hash = "372f4de0d76aa6ef5473e731021ca2f61db4821c378edb2efadb60f1b1018b43"
-
-[[files]]
 file = ".envrc"
 hash = "440225589d4fa2e392e6b0cdabbb056788f6ca46fb69ec79f2ac565ad2acd166"
-
-[[files]]
-file = ".github/workflows/check_toml.yaml"
-hash = "dfaeee50e6a965a168f77810951c7768dc3d2fd3fc4e2044c618556340427c23"
-
-[[files]]
-file = ".github/workflows/format_toml.yaml"
-hash = "d142cd6a9abbe266d9827206d03f0d795e2bd7426281044306f523e4eb0c4697"
-
-[[files]]
-file = ".github/workflows/release.yaml"
-hash = "e4de5240e9216e5c9c0883747ed20e0ab261df4f30920cd333d697844da3b184"
-
-[[files]]
-file = ".github/workflows/test.yaml"
-hash = "5344b82643400e605ac65e4fc95e1cc7aa4203158b33a476a4515ca9db1a077a"
-
-[[files]]
-file = ".github/workflows/update.yaml"
-hash = "aac5cf565d240d7c2f8bd7a2aa89ffeb2b24d7d6ed44b52998b63814284b1a4f"
-
-[[files]]
-file = "LICENSE"
-hash = "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
-
-[[files]]
-file = "README.md"
-hash = "1a431e27c7115db7f44248a422a89c23a251a5b75199228694209acb116aa313"
-
-[[files]]
-file = "artworks/baner.jpg"
-hash = "9befe24046a1fbc39a4084104ac75b2a6f28c1982bbde53e2cab93729640e28a"
-
-[[files]]
-file = "artworks/logo.jpg"
-hash = "017b3686b26d8cfb7d9a72157d7b1109f9c074546dee7f2c04a0b3c6807eb25f"
 
 [[files]]
 file = "devenv.nix"
@@ -961,10 +909,6 @@ hash = "539f362e9e192cf3b2813e0dfdfc51a5e6814129c6e82a9733842529beea6242"
 metafile = true
 
 [[files]]
-file = "renovate.json"
-hash = "ceff4d4116907e482a6d03d8d7d5e9ff78557601cc56a07dd58b986a85c8bfa9"
-
-[[files]]
 file = "resourcepacks/default-dark-mode.pw.toml"
 hash = "19e48b773677cc0d4a448e7ec5f4d82d7c9bd21063aac3c1bf710b4a78865c53"
 metafile = true
@@ -998,7 +942,3 @@ metafile = true
 file = "shaderpacks/makeup-ultra-fast-shaders.pw.toml"
 hash = "76c678ce2d09d603d0f80d7d9210c7da006878a14f6855d228a6021acdf0687d"
 metafile = true
-
-[[files]]
-file = "taplo.toml"
-hash = "2a557eb99e8e760277fbfa1ea918ef926bd2b2bf391382dc6c70fef66ddd4797"
