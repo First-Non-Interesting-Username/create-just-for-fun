@@ -561,8 +561,8 @@ hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
 
 [[files]]
-file = "mods/fps-overlay.pw.toml"
-hash = "dc6442c168653976ef7d3177b7be111fed091038e31b1ee293bc6c93384f5894"
+file = "mods/fpsdisplaymod.pw.toml"
+hash = "29832927cd88d16c51e0ec28bdfaf5950776a0553900931ee0a10e02ecb490cd"
 metafile = true
 
 [[files]]
@@ -773,11 +773,6 @@ metafile = true
 [[files]]
 file = "mods/rpl.pw.toml"
 hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
-metafile = true
-
-[[files]]
-file = "mods/sable-new-sodium-compat.pw.toml"
-hash = "5f79c4d57361e1548a930ec7b24b5437bf49742e9ae022d248ab0710c963a7a1"
 metafile = true
 
 [[files]]

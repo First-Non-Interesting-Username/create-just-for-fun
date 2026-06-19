@@ -1,0 +1,13 @@
+name = "fpsdisplaymod"
+filename = "fpsdisplay-1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/cUHhuzIF/versions/qRNZnsaY/fpsdisplay-1.0.0.jar"
+hash-format = "sha512"
+hash = "18204218663b8ef04ac38b407a24804249c0ae9980945351d997f563028420f948143f17001238c81d38491c1dc3c8cf55a5cc473844407f1358bd6c981092ea"
+
+[update]
+[update.modrinth]
+mod-id = "cUHhuzIF"
+version = "qRNZnsaY"
