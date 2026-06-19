@@ -1,14 +1,13 @@
 name: Create github release
-
 on:
   schedule:
     - cron: '45 17 * * 5'
   workflow_dispatch:
-        inputs:
-          tag_suffix:
-            description: 'Optional suffix (e.g. -hotfix)'
-            required: false
-            default: ''
+    inputs:
+      tag_suffix:
+        description: 'Optional suffix (e.g. -hotfix)'
+        required: false
+        default: ''
 
 jobs:
   release:
@@ -23,27 +22,34 @@ jobs:
         with:
           args: modrinth export
 
+      - name: Find exported .mrpack
+        id: mrpack
+        run: |
+          FILE=$(find . -name "*.mrpack" | head -n 1)
+          echo "path=$FILE" >> $GITHUB_OUTPUT
+
       - name: Get release name
         id: release_name
         run: echo "value=$(date +'%Y.%V')${{ github.event.inputs.tag_suffix }}" >> $GITHUB_OUTPUT
-      
+
       - name: Create Release
+        id: create_release
         uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # v3
         with:
           tag_name: ${{ steps.release_name.outputs.value }}
           name: ${{ steps.release_name.outputs.value }}
           generate_release_notes: true
-          files: "*./*.mrpack"
+          files: ${{ steps.mrpack.outputs.path }}
 
       - name: Publish Modpack to Modrinth
         uses: cloudnode-pro/modrinth-publish@8dc596b20b94959bf244180235d90729d05a674f # v2
         with:
           token: ${{ secrets.MODRINTH_TOKEN }}
-          project-id: 'Oz2C6Bff' 
+          project: 'Oz2C6Bff'
           version: ${{ steps.release_name.outputs.value }}
-          file: ./*.mrpack
+          files: ${{ steps.mrpack.outputs.path }}
           changelog: ${{ steps.create_release.outputs.body }}
-          version-type: 'release'
+          channel: 'release'
           loaders: 'neoforge'
           game-versions: |
             1.21.1
