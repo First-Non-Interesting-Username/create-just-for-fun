@@ -3,6 +3,12 @@ name: Create github release
 on:
   schedule:
     - cron: '45 17 * * 5'
+  workflow_dispatch:
+        inputs:
+          tag_suffix:
+            description: 'Optional suffix (e.g. -hotfix)'
+            required: false
+            default: ''
 
 jobs:
   release:
@@ -19,7 +25,7 @@ jobs:
 
       - name: Get release name
         id: release_name
-        run: echo "value=$(date +'%Y.%V')" >> $GITHUB_OUTPUT
+        run: echo "value=$(date +'%Y.%V')${{ github.event.inputs.tag_suffix }}" >> $GITHUB_OUTPUT
       
       - name: Create Release
         uses: softprops/action-gh-release@718ea10b132b3b2eba29c1007bb80653f286566b # v3
