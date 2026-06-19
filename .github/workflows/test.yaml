@@ -37,6 +37,11 @@ jobs:
       - name: Create game directory
         run: mkdir -p ${{ matrix.side }}/mods
 
+      - name: Refresh packwiz
+        uses: hudsonm62/packwiz-action@538bcd35d3a4810f35ef6f51b0b65be8191b28bf # v1
+        with:
+          args: refresh
+
       - name: Download packwiz-installer-bootstrap
         run: |
           curl -fsSL -o ${{ matrix.side }}/packwiz-installer-bootstrap.jar \
