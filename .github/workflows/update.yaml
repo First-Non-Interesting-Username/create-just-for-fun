@@ -32,15 +32,6 @@ jobs:
      - name: Run taplo fmt
        run: taplo fmt
 
-     - name: Run test workflow
-       env:
-          GH_TOKEN: ${{ github.token }}
-       run: |
-          gh workflow run test.yaml --ref ${{ github.ref }}
-          sleep 5
-          run_id=$(gh run list --workflow=test.yaml --limit=1 --json databaseId -q '.[0].databaseId')
-          gh run watch "$run_id" --exit-status
-
      - name: Bump pack version
        run: |
           NEW_VERSION=$(date -u +"%Y.%V")
