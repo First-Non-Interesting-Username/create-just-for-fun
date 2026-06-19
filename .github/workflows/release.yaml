@@ -30,7 +30,7 @@ jobs:
           files: "*./*.mrpack"
 
       - name: Publish Modpack to Modrinth
-        uses: modrinth/modrinth-publish@v2
+        uses: cloudnode-pro/modrinth-publish@v2
         with:
           token: ${{ secrets.MODRINTH_TOKEN }}
           project-id: 'Oz2C6Bff' 
@@ -38,6 +38,6 @@ jobs:
           file: ./*.mrpack
           changelog: ${{ steps.create_release.outputs.body }}
           version-type: 'release'
-          loaders: 'modrinth'
+          loaders: 'neoforge'
           game-versions: |
             1.21.1
