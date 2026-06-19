@@ -33,10 +33,9 @@ Remember that I don't accept performance complaints from people with specs below
 
 I reserve the right not to address issues that I am unable to reproduce on my own setup (Linux, Prism Laucher, `Required` hardware).
 
-## Roadmap
+## Mirrors
 
-- Include custom recipes
-- Remove all curseforge mods, so all mods are from modrinth
+- [Codeberg](https://codeberg.org/First-Non-Interesting-Username/create-just-for-fun)
 
 ## Star History
 
