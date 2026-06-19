@@ -1,14 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".envrc"
-hash = "440225589d4fa2e392e6b0cdabbb056788f6ca46fb69ec79f2ac565ad2acd166"
-
-[[files]]
-file = "devenv.nix"
-hash = "e2afd1f62a368f724088ac4e7f9ae148c905d80059ca93a67fd74c011c8c9cc9"
-
-[[files]]
 file = "mods/advanced-loot-info.pw.toml"
 hash = "d4249918c6558a8c6112c819238cc201bf1f9c5a449bbb23358f97729e47d7a3"
 metafile = true
@@ -665,7 +657,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "eec0715d020c6079c430338684d4cd752aa55231cb7887174b361481834e3ac4"
+hash = "03db1002af8f411a1b594817232859247e352f16f1c7907d29893b3472dce440"
 metafile = true
 
 [[files]]
