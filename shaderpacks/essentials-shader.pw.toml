@@ -1,0 +1,13 @@
+name = "ESSENTIALS Shader"
+filename = "ESSENTIALS Shader.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/lcVBKCo1/versions/wsxkJoMD/ESSENTIALS%20Shader.zip"
+hash-format = "sha512"
+hash = "71ee4837370154474519dc9413cf13573f2fc500c5c8d2d5937d15ab9af2962ffc9ae52149f4257dea7f43f394123ea842b9a9ff1f3cc33dd078a0a4aef827cc"
+
+[update]
+[update.modrinth]
+mod-id = "lcVBKCo1"
+version = "wsxkJoMD"

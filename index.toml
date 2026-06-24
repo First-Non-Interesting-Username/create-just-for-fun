@@ -271,6 +271,11 @@ hash = "404db1758af44123b89cbf6e2ffdf4a5cf11b708be665f48657ff40735723152"
 metafile = true
 
 [[files]]
+file = "mods/create-delete-and-repeat.pw.toml"
+hash = "c27e6d0429d9dbb8657ba606d391d7063a40e98f0382c9f38e732c6c669ffd9c"
+metafile = true
+
+[[files]]
 file = "mods/create-diesel-generators.pw.toml"
 hash = "a29ffaf830f4ac94a8a867f2bd05b453d7f60e38e58c3fe5e05ec8946c5e854a"
 metafile = true
@@ -943,6 +948,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/low-shield-pack.pw.toml"
 hash = "49ce362dab16a0b74da1e388627bce9513495e9cd9bffac724674a456c60a46f"
+metafile = true
+
+[[files]]
+file = "shaderpacks/essentials-shader.pw.toml"
+hash = "55f7ae519b07b57121dada855f23e6341585591cd4d77e16e5cca6d8c65433cb"
 metafile = true
 
 [[files]]
