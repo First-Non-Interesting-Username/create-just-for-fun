@@ -1,6 +1,11 @@
 hash-format = "sha256"
 
 [[files]]
+file = "mods/3dskinlayers.pw.toml"
+hash = "c1f98a1e9d7201f0b6ddc3f705f43a53f7539978f48425de5c1177a310fe7b86"
+metafile = true
+
+[[files]]
 file = "mods/advanced-loot-info.pw.toml"
 hash = "d4249918c6558a8c6112c819238cc201bf1f9c5a449bbb23358f97729e47d7a3"
 metafile = true
@@ -131,8 +136,18 @@ hash = "19b993b25c27eb6d1a78215683112f46a798448b02ebed3b14c583e2c2d91880"
 metafile = true
 
 [[files]]
+file = "mods/connector.pw.toml"
+hash = "e487d315e7a44f917cd1ddc2da1b26e65968bc19fe6c0ac868dab3d2bb97bbf1"
+metafile = true
+
+[[files]]
 file = "mods/consistent-jungle-leaves.pw.toml"
 hash = "659136530505072d5c83a229e042da1d4ddf395d0f369cc1510f8ea03d3a9b65"
+metafile = true
+
+[[files]]
+file = "mods/continuity.pw.toml"
+hash = "2e082857985c7550efdad38a1997b9805051b07fb61b0cd30921e786a8521130"
 metafile = true
 
 [[files]]
@@ -143,6 +158,11 @@ metafile = true
 [[files]]
 file = "mods/copycats.pw.toml"
 hash = "e002fab16a9b9ef0a35844030339612a38d3c58b0b93e97a34eb43ddc9108be7"
+metafile = true
+
+[[files]]
+file = "mods/cosy-critters.pw.toml"
+hash = "2954d79591bda695ba649e9a27e97e16c883753223aa0c8f53e14d2cd2591a20"
 metafile = true
 
 [[files]]
@@ -576,6 +596,11 @@ hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
 
 [[files]]
+file = "mods/forgified-fabric-api.pw.toml"
+hash = "a830f9e0393be04dd0a8a3a845b27e90cd34961887403c800e296182283d9c3e"
+metafile = true
+
+[[files]]
 file = "mods/fpsdisplaymod.pw.toml"
 hash = "29832927cd88d16c51e0ec28bdfaf5950776a0553900931ee0a10e02ecb490cd"
 metafile = true
@@ -588,6 +613,11 @@ metafile = true
 [[files]]
 file = "mods/fullbright-forge.pw.toml"
 hash = "6737a940d577175a7bd94e48f85b66015c9f75d4c8b5d2d6d9a2ee4d440fae15"
+metafile = true
+
+[[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "f9c118b7a66238a7f9e052705e82402e57c7a5b753d62d679b94701ede479752"
 metafile = true
 
 [[files]]
@@ -686,6 +716,11 @@ hash = "1cfd095fdcd19dcfab400e8b633b0da982656e784362ac4ae7a2e9054e190d5e"
 metafile = true
 
 [[files]]
+file = "mods/make_bubbles_pop.pw.toml"
+hash = "28d8aeaaa4e12098474b3028cf7dce0ef867de2f1a98fc6de2c224731e176fd3"
+metafile = true
+
+[[files]]
 file = "mods/mechanicals-lib.pw.toml"
 hash = "d536774d1cc0867bf445195366fe32177ec5aa7233d8f9a186cfc75d8d70b6b5"
 metafile = true
@@ -721,6 +756,11 @@ hash = "35acdf433fe8f8599f59975e848efdb717663c2c471d3a5dc18743799795a736"
 metafile = true
 
 [[files]]
+file = "mods/noisiumforked.pw.toml"
+hash = "df6299f5622d3e53a9cae66696cdc7b2b557b11b5be101eebb7ebd7a91d501db"
+metafile = true
+
+[[files]]
 file = "mods/notenoughcrashes.pw.toml"
 hash = "09ba6db54e6f13fafa1e12a9adcd83db9137617d631288579f520ab11b4bfe9a"
 metafile = true
@@ -743,6 +783,16 @@ metafile = true
 [[files]]
 file = "mods/particle-interactions.pw.toml"
 hash = "12fa04dfc69d95c522b43e3d5a3e0d2439c332f51d87aea9c214631dd607a7ce"
+metafile = true
+
+[[files]]
+file = "mods/particle-rain.pw.toml"
+hash = "6f24e7f5ecef862b1bdb61031637e27b093f185c3219023bea94d2d954ec4180"
+metafile = true
+
+[[files]]
+file = "mods/particular-reforged.pw.toml"
+hash = "e1829765957db3777232d634f9d38222e669da17f95722f42bb422de141d4d99"
 metafile = true
 
 [[files]]
@@ -806,6 +856,11 @@ hash = "674aaf0dc67f808f0054cfc7bbe041d6725fcbbe97644a85ffbd946a22d35666"
 metafile = true
 
 [[files]]
+file = "mods/seamless-sleep.pw.toml"
+hash = "2ad800931c3c659fc2b01ee237ac2c0edf0ace3cdb5ff2022ac69505629d99c2"
+metafile = true
+
+[[files]]
 file = "mods/simulated-gauges.pw.toml"
 hash = "b131faa1c8ca8217f5d52612d4b41f8f8f019488f6b1e3bfee065ca82c21bdfb"
 metafile = true
@@ -846,6 +901,16 @@ hash = "005494e0aa66f4ffb77a0193f22c0c21ee75e1a1274b19922b09ed767340f346"
 metafile = true
 
 [[files]]
+file = "mods/stormies-spiders.pw.toml"
+hash = "1d7ed103bf6c4995bc1eff18fc1aac0114cfbc0f58a0810d3984d57eecb644d6"
+metafile = true
+
+[[files]]
+file = "mods/subtle-effects.pw.toml"
+hash = "8eaab8f312c3a1a72e7d9e9123bbfef2a7dcac7dd7d8f9eab72fb7c0d25b021e"
+metafile = true
+
+[[files]]
 file = "mods/tectonic.pw.toml"
 hash = "cd5c8c1f6183f5c2ca899daed14f272890566002dfcb2d9f9a59dfbfac0bc8f6"
 metafile = true
@@ -853,6 +918,11 @@ metafile = true
 [[files]]
 file = "mods/toms-storage.pw.toml"
 hash = "0f67fdb37d6ef354f36a1da5805b5c083be21e7367868ec81d29426d94749609"
+metafile = true
+
+[[files]]
+file = "mods/trashslot.pw.toml"
+hash = "c1e0c805d5ccd49535a6820aa8a2461a516437f90312fcadd393f928e3ce7bf2"
 metafile = true
 
 [[files]]
