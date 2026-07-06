@@ -3,7 +3,7 @@ name: Update mods
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 17 * * 4'
+    - cron: '45 17 * * 3'
 
 jobs:
   update:
@@ -48,3 +48,4 @@ jobs:
          body: "This PR contains updated mods via `packwiz update --all`"
          branch: "chore(deps)/update-mods"
          base: "main"
+         auto-merge: true
