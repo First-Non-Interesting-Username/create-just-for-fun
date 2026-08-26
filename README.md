@@ -5,6 +5,11 @@ Casual Create Neoforge 1.21.1 focused Minecraft modpile.
 If you're looking for mod list, download link or full description, go to the [modrinth page](https://modrinth.com/project/Oz2C6Bff).
 For reports, please [create an issue](https://github.com/First-Non-Interesting-Username/create-just-for-fun/issues/new).
 
+## Screenshots
+
+<img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/a9b790c3-8778-4d4b-85fc-af6c1951e445" />
+
+
 ## Developement setup
 
 Use of [devenv](https://github.com/cachix/devenv) is highly reccomended.
