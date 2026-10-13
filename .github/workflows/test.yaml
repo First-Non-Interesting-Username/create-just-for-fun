@@ -94,7 +94,7 @@ jobs:
 
       - name: Run client (NeoForge 1.21.1)
         if: matrix.side == 'client'
-        uses: headlesshq/mc-runtime-test@fbafe02f89f4f13682e7b16dbcee6b6a43f4faca # 4.5.1
+        uses: headlesshq/mc-runtime-test@dfc8a2a0145f723b01abda5e1cf59eaba516d128 # 5.0.0
         with:
           mc: 1.21.1
           modloader: neoforge
