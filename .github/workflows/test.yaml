@@ -107,7 +107,7 @@ jobs:
 
       - name: Run server (NeoForge 1.21.1)
         if: matrix.side == 'server'
-        uses: headlesshq/mc-server-test@42de00da95e997b046a43eb9beb516494e542ba9 # 1.1.1
+        uses: headlesshq/mc-server-test@ae5de17e900cd7b01fa4bb08af3b595f9a873196 # 2.0.0
         with:
           mc: 1.21.1
           modloader: neoforge
